@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Crimson Text', serif;
-    max-width: 1600px;
     scroll-behavior: smooth;
 }
+
 
 /* CONTENEDOR 1*/
 
@@ -16,22 +16,25 @@
     background-image: url(../img/back.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    position: relative;
 }
 
-
-.contenedor-1 .cabecera {
-    width: 100%;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
+.contenedor-1 .fa-solid {
+    font-size: 55px;
+    position: absolute;
+    top: 20px;
+    left: auto;
+    color: #f39519;
+    display: none;
 }
 
 .logo{
-    width: 90px;
+    width: 120px;
     padding-top: 20px;
-    filter: drop-shadow(10px 10px 20px rgb(251, 248, 248));
+    filter: drop-shadow(0 10px 20px rgb(251, 248, 248));
 }
 
 
@@ -42,7 +45,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 250px;
+    margin: 40px;
     }
 
 header h1 {
@@ -56,10 +59,10 @@ header h1 {
 
 
 header h3 {
+    font-size: 1.7rem;
     text-align: center;
     width: 60%;
     color: rgb(246, 237, 237);
-    margin-bottom: 30px;
     text-shadow: 2px 2px black;
 }
 
@@ -69,6 +72,28 @@ header .botones a:hover {
     background-color: rgb(209, 208, 197);
 }
 
+
+@media (max-width: 835px){
+    .contenedor-1 {
+
+        background-image: url(../img/back2.png);}
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+    
+    header h3 {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 622px){
+    .contenedor-1{
+        background-image: url(../img/backchico.png);
+}
+
+}
 
 
 /* CONTENEDOR 2*/
@@ -139,11 +164,12 @@ header .botones a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    margin-top: 15px;
+
 }
 
 .contenedor-3 h2 {
-    padding-top: 40px;
+    padding-top: 20px;
     font-size: 3rem;
     text-align: center;
     text-shadow: 1px 2px gray;
@@ -202,8 +228,52 @@ header .botones a:hover {
 .contenedor-3 .c_3 img{
     width: 55%;
     height: 80%;
+    margin-right: 15px;
     object-fit: cover;
+    padding-bottom: 25px;
 }
+
+@media (max-width: 835px){
+
+    .contenedor-3 {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+ 
+    }
+    .contenedor-3 .c_3 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-3 .c_3 .c_3_textos{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .contenedor-3 .c_3_textos .c_3_p1{
+        margin-top: 20px;
+    }
+
+    .contenedor-3 .c_3 img{
+        width: 80%;
+        height: 40%;
+        padding: 0;
+    }
+
+    .contenedor-3 h2 {
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 1px 2px gray;
+        letter-spacing: 4px;
+    }
+}
+
 
 /*CONTENEDOR-3b*/
 
@@ -308,7 +378,7 @@ header .botones a:hover {
 
 .contenedor-4 .productos .producto {
     width:100%;
-    height: 160px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -573,10 +643,12 @@ header .botones a:hover {
         justify-content: center;
         gap: 50px;
         align-items: center;
+   
     }
 
-    .contenedor-7 .renglon_final .iconos_redes i{
+    .contenedor-7 .renglon_final .iconos_redes a i{
         font-size: 30px;
+        color: black;
     }
 
 .contenedor-7 .renglon_final .iconos_redes .img_final{
@@ -587,7 +659,7 @@ header .botones a:hover {
 
 .contenedor-7 .renglon_final .final_etiquetas a{
     text-decoration: none;
-    color: rgb(63, 63, 63);
+    color: rgb(20, 20, 20);
     border-right: solid 1px;
     padding: 10px;
     font-weight: bold;
