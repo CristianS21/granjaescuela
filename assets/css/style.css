@@ -486,19 +486,7 @@ header .botones a:hover {
     .contenedor-5 .cont_items {
         width: 100%;
         height: auto;
-        padding: 20px 0;
-    }
-
-    .contenedor-5 .cont_items .reposicionar_item{
-        width: 33%;
-        background-color: red;
-    }
-
-    .contenedor-5 .cont_items .items .dos_filas{
-        display: flex;
-        width: 66%;
-        background-color: blue;
-        justify-content: space-evenly;
+        margin: 30px 0;
     }
 
     .contenedor-5 .cont_items .items {
@@ -506,11 +494,10 @@ header .botones a:hover {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         line-height: 35px;
         list-style-image: url(../img/check_naranja.png);
         padding-left: 18px;
-        gap: 40px;
         flex-wrap: wrap;
     }
 
@@ -531,6 +518,7 @@ header .botones a:hover {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        margin-bottom: 20px;
     }
 
     .contenedor-5 .cont_datos img {
@@ -611,13 +599,19 @@ header .botones a:hover {
     }
 
     .c5_centro p{
-        width: 80%;
+        width: 75%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .contenedor-5 .cont_datos .datos{
         text-align: center;
     }
- 
 }
 
 @media (max-width: 764px){
+
+    
     
         .contenedor-5 .cont_items .items .dos_filas{
             width: 100%;
@@ -717,6 +711,12 @@ header .botones a:hover {
     background: linear-gradient(rgba(241, 241, 240, 1), rgba(245, 171, 76, 1));
   }
           
+
+  @media (max-width: 764px){
+    .contenedor-6 form{
+        width:100%;
+    }
+  }
 
 /*CONTENEDOR 7 */
 
