@@ -101,9 +101,9 @@ header .botones a:hover {
 
 .contenedor-2 {
     width: 100%;
-    height: 500%;
     background-color: rgb(249, 245, 239);
-    margin-bottom: 60vh;
+    margin-bottom: 85vh;
+
 }
 
 .contenedor-2 .imagenes {
@@ -156,16 +156,28 @@ header .botones a:hover {
     border-top: none;
 }
 
+@media (max-width: 1161px){
+    .contenedor-2 .imagenes .item-img h4 {
+        font-size: 17px;  
+    }
+
+    @media (max-width: 965px){
+    .contenedor-2 .imagenes {
+            display: none;
+        }
+    }
+
+}
+
 /*CONTENEDOR 3*/
 
 .contenedor-3 {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
 
 }
 
@@ -237,7 +249,7 @@ header .botones a:hover {
 
     .contenedor-3 {
         height: auto;
-        margin-top: 20px;
+
         margin-bottom: 40px;
  
     }
@@ -637,7 +649,8 @@ header .botones a:hover {
 
 .contenedor-6 {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+   
     background-image: url(../img/fondo-contacto.png);
     background-size: cover;
 }
@@ -646,9 +659,10 @@ header .botones a:hover {
   .contenedor-6 form{
     background-color:rgba(0,0,0,.7);
     width: 700px;
-    height: 100%;
+    height: 100vh;
+    max-height: 100vh; 
     margin: auto;
-    padding: 50px 80px;
+    padding: 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -715,6 +729,7 @@ header .botones a:hover {
   @media (max-width: 764px){
     .contenedor-6 form{
         width:100%;
+        height: auto;
     }
   }
 
@@ -722,8 +737,7 @@ header .botones a:hover {
 
 .contenedor-7{
     width: 100%;
-    height: 60vh;
-
+    height: 85vh;
     position: fixed;
     bottom: 0;
     z-index: -1;
@@ -731,64 +745,69 @@ header .botones a:hover {
 
 .contenedor-7 .footer_up {
     width: 100%;
-    height: 80%;
+    height: 75%;
     background-color: rgb(249, 245, 239);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
-    padding-bottom: 10px;
-}
-
-
-.contenedor-7 .footer_up a img{
-    padding-top: 3px;
+    gap: 9px;
+    padding: 60px;
+    padding-bottom: 80px;
 }
 
 .contenedor-7 .footer_up h2{
     font-size: 3rem;
     color: rgb(245, 151, 44);
+    text-align: center;
 }
 
-
-
+.contenedor-7 .footer_up h3{
+    text-align: center;
+}
 
 .contenedor-7 .renglon_final{
     width: 100%;
-    height: 20%;
+    height: 25%;
     background-color: rgb(245, 197, 153);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
     align-items: center;
+
 }
 
 .contenedor-7 .renglon_final .final_derechos{
     font-weight: bold;
 }
 
-
-    .contenedor-7 .renglon_final .iconos_redes{
+    .contenedor-7 .footer_up .iconos_redes{
         width: 35%;
-        height: 100%;
+        height:auto;
         display: flex;
         justify-content: center;
         gap: 50px;
         align-items: center;
-   
+        margin-top: 17px;
     }
 
-    .contenedor-7 .renglon_final .iconos_redes a i{
+    .contenedor-7 .footer_up .iconos_redes a i{
         font-size: 30px;
         color: black;
     }
 
-.contenedor-7 .renglon_final .iconos_redes .img_final{
+.contenedor-7 .footer_up .iconos_redes .img_final{
     width: 40px;
     height: 40px;
     filter: drop-shadow(2px 2px black);
+}
+
+.contenedor-7 .renglon_final {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
 }
 
 .contenedor-7 .renglon_final .final_etiquetas a{
@@ -801,4 +820,22 @@ header .botones a:hover {
 
 .contenedor-7 .renglon_final .final_etiquetas a:nth-child(3){
     border-right: none;
+}
+
+
+@media (max-width: 850px){
+    .contenedor-7 .renglon_final{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 483px){
+    .contenedor-7 .footer_up h2{
+        font-size: 2rem;
+    }
 }
