@@ -102,7 +102,7 @@ header .botones a:hover {
 .contenedor-2 {
     width: 100%;
     background-color: rgb(249, 245, 239);
-    margin-bottom: 85vh;
+    margin-bottom: 70vh;
 
 }
 
@@ -607,7 +607,7 @@ header .botones a:hover {
     }
 
     .c5_centro iframe{
-        width: 80%;
+        width: 94%;
     }
 
     .c5_centro p{
@@ -737,7 +737,7 @@ header .botones a:hover {
 
 .contenedor-7{
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     position: fixed;
     bottom: 0;
     z-index: -1;
@@ -745,7 +745,7 @@ header .botones a:hover {
 
 .contenedor-7 .footer_up {
     width: 100%;
-    height: 75%;
+    height: 55vh;
     background-color: rgb(249, 245, 239);
     display: flex;
     flex-direction: column;
@@ -768,7 +768,7 @@ header .botones a:hover {
 
 .contenedor-7 .renglon_final{
     width: 100%;
-    height: 25%;
+
     background-color: rgb(245, 197, 153);
     display: flex;
     align-items: center;
@@ -804,7 +804,7 @@ header .botones a:hover {
 }
 
 .contenedor-7 .renglon_final {
-    height: 20%;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     padding: 30px;
