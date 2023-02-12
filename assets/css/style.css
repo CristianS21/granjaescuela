@@ -393,7 +393,6 @@ header .botones a:hover {
 
 .contenedor-4{
     width: 100%;
-    height: auto;
     background-color: rgb(249, 245, 239);
     display: flex;
     flex-direction: column;
@@ -434,17 +433,18 @@ header .botones a:hover {
     color: rgb(251, 144, 30);
     text-align:center;
     padding: 0 15px;
+    text-shadow: 1px 1px rgb(103, 102, 102);
 
 }
 
 .contenedor-4 .productos .producto p {
-    width: 55%;
+    width: 35%;
     font-size: 20px;
     padding: 0 30px;
 }
 
 .contenedor-4 .productos .producto img {
-    width: 25% ;
+    width: 45% ;
     height: 112px;
     object-fit: cover;
 }
